@@ -1,8 +1,6 @@
-
-
 export const createLocalStorage = (product, category) => {
   let otherProducts = JSON.parse(localStorage.getItem(category))
-  
+
   if (otherProducts) localStorage.setItem(category, JSON.stringify([product, ...otherProducts]))
   else if (!otherProducts) localStorage.setItem(category, JSON.stringify([product]))
 }

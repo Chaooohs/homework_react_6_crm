@@ -104,7 +104,7 @@ button {
 
 /* #endregion */
 /* #region nav */
-.nav {
+.sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,17 +113,14 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 24px;
-  width: 200px;
+  width: 240px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 40px 0 28px;
 }
-.nav__btn_layout {
-  padding: 0 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.nav__btn {
+.sidebar__btn {
+  width: 90%;
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +130,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 /* #endregion */
@@ -277,7 +275,7 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nav {
+  .sidebar {
     width: 100%;
     height: 64px;
     position: fixed;

@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import { useMediaQuery } from 'react-responsive'
 import "./nav-list.css"
 
+
 export const NavList = ({ isOpen }) => {
   const isTablet = useMediaQuery({ maxWidth: 992 })
   const isDesktop = useMediaQuery({ minWidth: 993 })
@@ -40,6 +41,5 @@ export const NavList = ({ isOpen }) => {
         </div>
       }
     </>
-
   )
 }
