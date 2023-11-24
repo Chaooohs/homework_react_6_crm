@@ -1,0 +1,54 @@
+html {
+  --text-white: #FFF;
+}
+
+.burger {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 16px;
+  cursor: pointer;
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-white);
+    transition: all 0.1s linear;
+
+    &_one {
+      top: 0
+    }
+
+    &_two {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &_three {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &_four {
+      bottom: 0;
+    }
+  }
+}
+
+.open .burger__line_one,
+.open .burger__line_four {
+  opacity: 0;
+}
+
+.open .burger__line_two {
+  transform: rotate(45deg);
+}
+
+.open .burger__line_three {
+  transform: rotate(-45deg);
+}

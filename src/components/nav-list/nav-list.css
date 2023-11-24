@@ -1,0 +1,89 @@
+html {
+  --text-white: #FFF;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.60);
+  --text-white-secondary: rgba(255, 255, 255, 0.70);
+  --input-line-divider: #424445;
+  --background: #161618;
+}
+
+.list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+}
+
+.link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--text-white-secondary);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 40px;
+}
+.link:hover {
+  color: var(--text-white);
+}
+
+.active {
+  color: var(--text-white);
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 8px;
+  height: 32px;
+  background: url("./img/hover.png") 0 0/100% no-repeat;
+}
+
+@media (max-width: 992px) {
+  .list {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    overflow: auto;
+    padding: 24px 0;
+    width: 100%;
+    max-width: 334px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: var(--background);
+    border-left: 1px solid var(--input-line-divider);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .open .list {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .active::before {
+    right: 0;
+    left: auto;
+    background: url("./img/hover-rigth.png") 0 0/100% no-repeat;
+  }
+}
