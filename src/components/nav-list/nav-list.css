@@ -65,9 +65,6 @@ html {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     background-color: var(--background);
     border-left: 1px solid var(--input-line-divider);
     -webkit-transform: translateX(100%);
