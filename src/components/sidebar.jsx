@@ -8,7 +8,7 @@ import { NavList } from "./nav-list/nav-list"
 export const SideBar = () => {
   const isTablet = useMediaQuery({ maxWidth: 992 })
   const isDesktop = useMediaQuery({ minWidth: 993 })
-  const [isOpen, setOpen] = useState()
+  const [isOpen, setOpen] = useState(false)
 
   useEffect(() => document.body.classList.toggle('open', isOpen)[isOpen])
 
@@ -19,7 +19,7 @@ export const SideBar = () => {
           isTablet &&
           <>
             <Link to="create">
-              <button type="submit" className="button">Додати щось нове</button>
+              <button type="submit" className="button" style={{height: "38px"}}>Додати щось нове</button>
             </Link>
             <Burger onBurger={() => setOpen(!isOpen)}/>
             <NavList isOpen={setOpen}/>

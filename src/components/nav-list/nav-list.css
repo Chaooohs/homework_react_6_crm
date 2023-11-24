@@ -60,8 +60,8 @@ html {
     z-index: 900;
     overflow: auto;
     padding: 24px 0;
-    width: 100%;
-    max-width: 334px;
+    width: 60%;
+    max-width: 300px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;

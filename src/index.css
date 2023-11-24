@@ -304,7 +304,7 @@ button {
   .board {
     border: none;
     border-radius: inherit;
-    padding: 24px 0 0;
+    padding: 24px 0;
   }
 }
 @media (max-width: 768px) {
