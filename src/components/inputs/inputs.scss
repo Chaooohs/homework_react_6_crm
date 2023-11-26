@@ -1,16 +1,14 @@
-html {
-  --text-white: #FFF;
-  --text-primary: rgba(0, 0, 0, 0.87);
-  --text-secondary: rgba(0, 0, 0, 0.60);
-  --text-white-secondary: rgba(255, 255, 255, 0.70);
-  --input-line-divider: #424445;
-}
+$text-white: #FFF;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.60);
+$text-white-secondary: rgba(255, 255, 255, 0.70);
+$input-line-divider: #424445;
 
 .input {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  color: var(--text-white);
+  color: $text-white;
 
   display: block;
   width: 100%;
@@ -19,11 +17,11 @@ html {
   padding: 16px 12px 16px 16px;
   border-radius: 4px;
   background: transparent;
-  border: 1px solid var(--input-line-divider);
+  border: 1px solid $input-line-divider;
   outline: none;
 
   &::placeholder {
-    color: var(--text-white-secondary);
+    color: v$text-white-secondary;
   }
 }
 
@@ -48,7 +46,7 @@ html {
   font-weight: 700;
   line-height: 21px;
   appearance: none;
-  color: var(--text-white-secondary);
+  color: $text-white-secondary;
   padding: 0 16px;
   cursor: pointer;
 }
@@ -57,7 +55,7 @@ html {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  color: var(--text-secondary);
+  color: $text-secondary;
 }
 
 .textarea {

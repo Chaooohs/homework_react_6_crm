@@ -1,11 +1,10 @@
-html {
-  --text-white: #FFF;
-  --text-primary: rgba(0, 0, 0, 0.87);
-  --text-secondary: rgba(0, 0, 0, 0.60);
-  --text-white-secondary: rgba(255, 255, 255, 0.70);
-  --input-line-divider: #424445;
-  --background: #161618;
-}
+$text-white: #FFF;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.60);
+$text-white-secondary: rgba(255, 255, 255, 0.70);
+$input-line-divider: #424445;
+$background: #161618;
+
 
 .error {
   display: flex;
@@ -17,6 +16,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--text-white-secondary);
+    color: $text-white-secondary;
   }
 }

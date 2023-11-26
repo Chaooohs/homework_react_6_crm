@@ -1,11 +1,9 @@
-html {
-  --text-white: #FFF;
-  --text-primary: rgba(0, 0, 0, 0.87);
-  --text-secondary: rgba(0, 0, 0, 0.60);
-  --text-white-secondary: rgba(255, 255, 255, 0.70);
-  --input-line-divider: #424445;
-  --background: #161618;
-}
+$text-white: #FFF;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.60);
+$text-white-secondary: rgba(255, 255, 255, 0.70);
+$input-line-divider: #424445;
+$background: #161618;
 
 .list {
   flex: 1 1 auto;
@@ -19,17 +17,17 @@ html {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  color: var(--text-white-secondary);
+  color: $text-white-secondary;
   box-sizing: border-box;
   padding: 12px 40px;
 
   &:hover {
-    color: var(--text-white);
+    color: $text-white;
   }
 }
 
 .active {
-  color: var(--text-white);
+  color: $text-white;
 
   &::before {
     content: '';
@@ -57,8 +55,8 @@ html {
     max-width: 300px;
     align-items: flex-end;
     // justify-content: center;
-    background-color: var(--background);
-    border-left: 1px solid var(--input-line-divider);
+    background-color: $background;
+    border-left: 1px solid $input-line-divider;
     transform: translateX(100%);
     transition: all .3s linear;
   }
